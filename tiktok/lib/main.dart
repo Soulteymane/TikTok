@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:tiktok/splashScreen.dart';
 import 'package:tiktok/videoplayer.dart';
 import 'dart:math' as math;
 
@@ -84,16 +85,16 @@ class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
   final List<Map> tiktokItems = [
     {
-      "video": "assets/videos/video_1.mp4",
+      "video": "assets/videos/A1.mp4",
     },
     {
-      "video": "assets/videos/video_2.mp4",
+      "video": "assets/videos/A2.mp4",
     },
     {
-      "video": "assets/videos/video_3.mp4",
+      "video": "assets/videos/A3.mp4",
     },
     {
-      "video": "assets/videos/video_4.mp4",
+      "video": "assets/videos/A4.mp4",
     },
     {
       "video": "assets/videos/video_5.mp4",
@@ -114,7 +115,7 @@ class HomePage extends StatelessWidget {
         return Builder(
           builder: (BuildContext context) {
             return Container(
-              color: Colors.amber,
+              //color: Colors.amber,
               child: Stack(
                 children: [
                   VideoWidget(videoUrl: item['video']),
